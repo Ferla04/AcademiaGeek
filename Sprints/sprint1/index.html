@@ -8,19 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <div>
-            <input type="number" id="inputNumber">
-            <select name="" id="firstCoin" onchange="noRepeat(firstSelect,secondSelect)"></select>
-            <select name="" id="SecondCoin" onchange="noRepeat(firstSelect,secondSelect)"></select>
-            <p id="answer"></p>
+    <section class="container">
+        <h1>Conversor de Divisas</h1>
+        <img src="images/coin.png" alt="coin">
+        <div class="result">
+            <input type="number" id="inputNumber" placeholder="Cantidad...">
+            <p id="answer">$00.00</p>
         </div>
-        <p id="message"></p>
-        <button type="submit" onclick="calculate(firstSelect,secondSelect,inputNum,message,answer)">Calcular</button>
+        <article>
+            <div>
+                <span>De:</span>
+                <select name="" id="firstCoin" onchange="noRepeat(firstSelect,secondSelect)"></select>
+            </div>
+            <div>
+                <span>A:</span>
+                <select name="" id="SecondCoin" onchange="noRepeat(firstSelect,secondSelect)"></select>
+            </div>
+        </article>
+        <button type="submit" onclick="calculate(firstSelect,secondSelect,inputNum,notice,answer)">Calcular</button>
     </section>
-
+    <section id="notice"></section>
 
     <script src="js/conversor.js"></script>
 </body>
 </html>
-<!-- <option value="" selected disabled> Elejir Moneda</option> -->

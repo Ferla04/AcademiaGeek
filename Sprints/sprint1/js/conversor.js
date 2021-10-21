@@ -2,8 +2,8 @@ let firstSelect = document.getElementById('firstCoin');
 let secondSelect = document.getElementById('SecondCoin');
 //others
 let inputNum = document.getElementById('inputNumber');
-let message = document.getElementById('message');
 let answer = document.getElementById('answer');
+let notice = document.getElementById('notice');
 //options
 let options2;
 //value
@@ -32,18 +32,18 @@ function noRepeat(firstSelect,secondSelect){
     })
 }
 
-function calculate(firstSelect,secondSelect,inputNum,message,answer){
+function calculate(firstSelect,secondSelect,inputNum,notice,answer){
     let valueNum = inputNum.value;
     first = firstSelect.value
     second =  secondSelect.value;
 
     if(first.length < 1 || second.length < 1 || valueNum.length == ''){
-        return message.innerHTML = 'por favor ingrese todos los datos';
+        return notice.style.display = 'block';
     }else{
-        message.innerHTML = '';
+        notice.style.display = 'none';
     }
 
-    answer.innerHTML = `Resultado: $${conversion(first,second,valueNum)}`;
+    answer.innerHTML = `$${conversion(first,second,valueNum)}`;
 }
 
 
@@ -129,8 +129,9 @@ COINS.forEach((e,i)=>{
     }
 })
 
-
-
-
-
+//mensaje
+let message = document.createElement('p');
+message.setAttribute('id','message');
+message.innerHTML = 'por favor ingrese todos los datos';
+notice.appendChild(message);
 

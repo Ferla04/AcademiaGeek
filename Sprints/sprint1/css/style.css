@@ -1,6 +1,122 @@
-p{
-    height: 18px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: #cbcbcb;
+    border-radius: 10px ;
+    padding: 20px 50px;
+    text-align: center;
+    width: 500px;
+}
+
+.container img{
+    margin-top: 10px;
+    width: 80px;
+}
+
+.container > div{
+    margin: 10px 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#inputNumber{
+    margin-top: 5px;
+    padding: 10px;
+    width: 150px;
+    height: 32px;
+    font-size: 17px;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+}
+
+#inputNumber:focus{
+    border: 2px solid #572364;
+}
+
+#inputNumber::-webkit-input-placeholder{
+    font-size: 14px;
+    font-style: italic;
+}
+
+#inputNumber::-moz-placeholder{
+    font-size: 14px;
+    font-style: italic;
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+}
+
+select{
+    outline: none;
+    padding: 5px 10px;
+    width: 150px;
+    height: 33px;
+    -webkit-appearance: none;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%, 0 0;
+}
+
+select option{
+    background-color: #cbcbcb;
+}
+
+#notice{
+    display: none;
+    background-color: #ff5830;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px 0;
+    border: 2px solid #c62828;
+    border-radius: 10px;
+}
+
+#answer{
+    margin-top: 5px;
+    align-self: center;
+    font-size: 25px;
+    height: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #572364;
+}
+
+button{
+    margin-top: 30px;
+    padding: 7px 20px;
+    font-size: 14px;
+    border: 2px solid #572364;
+    background-color: #572364;
+    font-weight: 600;
+    color: #ffd15d;
+    border-radius: 5px;
+    transition: .4s ease-in background-color,color,box-shadow;
+}
+
+button:hover{
+    background-color: transparent;
+    color: #572364;
+    box-shadow: 2px 2px 8px #572364c4;
+}
+
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
