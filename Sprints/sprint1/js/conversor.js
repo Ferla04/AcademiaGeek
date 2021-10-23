@@ -113,6 +113,9 @@ function conversion(first,second,valueNum){
         break;
     }
 
+    if(result%1 == 0){
+        return result
+    }
     return result.toFixed(3);
 }
 
