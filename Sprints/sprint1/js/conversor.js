@@ -113,7 +113,7 @@ function conversion(first,second,valueNum){
         break;
     }
 
-    return result;
+    return result.toFixed(3);
 }
 
 //------------------------ CODIGO -----------------------//

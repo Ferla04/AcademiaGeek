@@ -48,12 +48,7 @@ body{
     border: 2px solid #572364;
 }
 
-#inputNumber::-webkit-input-placeholder{
-    font-size: 14px;
-    font-style: italic;
-}
-
-#inputNumber::-moz-placeholder{
+#inputNumber::placeholder{
     font-size: 14px;
     font-style: italic;
 }
