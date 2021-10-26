@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0a0a;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.menu{
+    background-color: #272727;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 6px #f9c301;
+    height:80px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu div{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu h1{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f9c301;
+}
+
+.menu img{
+    width: 50px;
+}
+
+.menu ul{
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.Home{
+    border-bottom: 2px solid #f9c301;
+}
+
+.loginRegister:hover{
+    border-bottom: 2px solid #8344c2;
+}
+
+/*------------------------- Slider --------------------------*/
+.slider{
+    width: 75%;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    width: 400%;
+    display: flex;
+    animation: changeImg 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    width: 100%;
+    height: 550px;
+    list-style: none;
+}
+
+.slider li img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.avengers{
+    object-position: 50% -180px;
+}
+
+/*------------------------- Tarjetas --------------------------*/
+.movies{
+    margin: 50px 0 30px;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.movies article{
+    background-color: #272727;
+    border-radius: 5px;
+    margin: 15px 0;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movies article:hover{
+    box-shadow: 3px 3px 10px #f9c301;
+}
+
+.movies h2{
+    color: #fff;
+    font-size: 21px;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.movies img{
+    border-radius: 5px;
+    height: 280px;
+    width: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+
+footer{
+    background: #f9c301;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes changeImg{
+    0%{margin-left:0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
