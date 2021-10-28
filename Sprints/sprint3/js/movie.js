@@ -27,10 +27,6 @@ function getApi(movie,nameMovie,imgMovie){
     xhttp.onreadystatechange = function(){
         if(this.readyState === 4 && this.status === 200){
             let data = JSON.parse(xhttp.responseText);
-            // console.log(data.Search[0].Year); 
-            // console.log(data.Search[0].Title);
-            // console.log(data.Search[0].Poster);
-
             nameMovie.innerHTML = data.Search[0].Title;
             imgMovie.setAttribute('src', data.Search[0].Poster)
         }

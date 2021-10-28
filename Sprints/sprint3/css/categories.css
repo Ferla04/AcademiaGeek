@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0a0a;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img{
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.menu{
+    background-color: #272727;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 6px #f9c301;
+    height:80px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu div{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu h1{
+    font-size: 40px;
+    color: #f9c301;
+}
+
+.menu img{
+    width: 50px;
+}
+
+.menu ul{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.menu a i{
+    color: #f9c301;
+}
+
+.menu a sup{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -13px;
+    right: -8px;
+}
+
+.menu #aMovie{
+    border-bottom: 2px solid #f9c301;
+}
+
+.menu .signOff:hover{
+    border-bottom: 2px solid #8344c2;
+}
+
+/*---------------------------------------------*/
+main{
+    width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div:first-child  h2{
+    color: #f9c301;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+main div:first-child h2:hover{
+    border-bottom: 2px solid #8344c2;
+}
+
+#contProducts{
+    width: 850px;
+    padding: 0 30px 30px;
+}
+
+#contProducts h2{
+    color: #8344c2;
+    font-size: 35px;
+    text-align: center;
+}
+
+#category2{
+    display: none;
+} 
+
+#contProducts article{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contProducts article div{
+    background-color: #272727;
+    border-radius: 5px;
+    margin: 20px 0;
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+#contProducts article div h3{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contProducts article div img{
+    margin: 10px 0 ;
+    height: 230px;
+    width: 155px;
+}
+
+/*-------------------------------------------------------*/
+#contModal{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 3px;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.modal{
+    margin: auto;
+    background-color: #272727;
+    width: 650px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.modal  i{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#selectMovie{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#selectMovie img{
+    width: 250px;
+    height: 380px;
+}
+
+#selectMovie  > div{
+    width: 280px;
+}
+
+#selectMovie  h2{
+    text-align: center;
+    font-size: 37px;
+    color: #f9c301;
+    margin: 25px 0 50px;
+}
+
+#selectMovie p{
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#selectMovie span{
+    color: #b17ee4;
+}
+
+#selectMovie input{
+    height: 35px;
+    width: 60px;
+    margin: 20px 5px 0 30px;
+    padding: 0 13px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 4px 0 #c2c2c2;
+    color: #0a0a0a;
+    outline: none;
+}
+
+#selectMovie input::placeholder{
+    color: #a8a7a7;
+    font-size: 15px;
+}
+
+#selectMovie button{
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    padding: 8px 15px;
+    border: 2px solid #663399;
+    background-color: #663399;
+    box-shadow: 0px 4px 0 #2e0d4e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease color, box-shadow;
+}
+
+#selectMovie button:hover{
+    color: #fff;
+    box-shadow: 0px 4px 10px #170429;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+/*----------------------------------------------------*/
+#cart{
+    display: none;
+    margin: 0 auto;
+    width: 800px;
+    padding: 0 70px 20px;
+}
+
+#cart h1{
+    text-align: center;
+    font-size: 50px;
+    color: #f9c301;
+}
+
+#cart ul{
+    color: #fff;
+    margin: 20px 0 10px;
+    padding: 10px 0 10px 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #f9c301;
+    border-bottom: 2px solid #f9c301;
+}
+
+#cart img{
+    width: 135px;
+    height: 200px;
+    margin-left: 30px;
+    box-shadow: 3px 3px 0px #663399;
+}
+
+.valueProducts{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f9c301;
+    margin: 20px 0;
+}
+
+.valueProducts div{
+    margin-right: 50px;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valueProducts p{
+    font-size: 30px;
+}
+
+.valueProducts i{
+    position: absolute;
+    right: 5px;
+    top: 89px;
+    font-size: 20px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+#contTotal{
+    display: none;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#cart div a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    padding: 8px 15px;
+    border: 2px solid #663399;
+    background-color: #663399;
+    box-shadow: 0px 4px 0 #2e0d4e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease color;
+}
+
+#cart a:hover{
+    color: #fff;
+}
+
+#cart div p{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+footer{
+    background: #f9c301;
+    padding: 20px;
+    text-align: center;
+}
